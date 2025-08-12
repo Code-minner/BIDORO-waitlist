@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "BIDORO",
   description:
     "Discover budget-friendly deals, unique handmade goods, and second-hand treasures — all verified and trusted with secure escrow payments.",
+  icons: {
+    icon: "/assets/BIDORO-icon-img.jpg",
+  },
   openGraph: {
     title: "BIDORO",
     description:
@@ -41,7 +44,6 @@ export const metadata: Metadata = {
     images: ["https://your-domain.com/og-image.jpg"], // Same as OG image
   },
 };
-
 
 export default function RootLayout({
   children,

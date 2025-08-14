@@ -765,7 +765,7 @@ const BidoroLayout: React.FC = () => {
             }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            We're launching
+            We&apos;re launching
             <br />
             <span>Soon</span>
           </motion.h1>

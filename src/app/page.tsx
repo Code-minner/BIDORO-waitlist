@@ -75,7 +75,7 @@ const HomeContent = () => {
           {/* Text container, centered */}
           <div className="text-center">
             <h1 className="text-6xl md:text-7xl font-extrabold text-green-800 mb-4">
-              We're launching<br />Soon!
+              We're launching<br/>Soon!
             </h1>
           </div>
         </div>

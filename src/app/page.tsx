@@ -6,30 +6,6 @@ import { useRouter } from "next/navigation";
 import { Logo, Ai, Handshake, Money } from "@/components/svgs/svg";
 import WaitlistModal from "@/components/WaitlistModal"; // Import your modal
 
-interface PhotoProps {
-  src?: string;
-  className?: string;
-  alt?: string;
-}
-
-const Photo: React.FC<PhotoProps> = ({
-  src,
-  className = "",
-  alt = "Photo",
-}) => (
-  <div
-    className={`rounded-xl md:rounded-2xl shadow-md overflow-hidden ${className}`}
-  >
-    <img
-      src={
-        src || "https://via.placeholder.com/400x400/e2e8f0/cbd5e1?text=Photo"
-      }
-      alt={alt}
-      className="w-full h-full object-cover"
-    />
-  </div>
-);
-
 const BidoroLayout: React.FC = () => {
   const router = useRouter();
 
@@ -81,8 +57,9 @@ const BidoroLayout: React.FC = () => {
 
       // Redirect to thank-you page
       router.push("/thank-you");
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      const error = err as Error;
+      setError(error.message || 'Something went wrong');
     } finally {
       setLoading(false);
     }
@@ -183,10 +160,6 @@ const BidoroLayout: React.FC = () => {
     y: [0, -10, 0],
   };
 
-  const rotatingAnimation = {
-    rotate: [0, 5, -5, 0],
-  };
-
   const handleCloseModal = () => {
     setShowModal(false);
   };
@@ -196,31 +169,9 @@ const BidoroLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 md:py-16 px-4 relative "
-    style={{ overflow: 'hidden' }}>
+    <div className="min-h-screen bg-gray-50 py-8 md:py-16 px-4 relative">
       <div
         className="absolute top-[-200px] left-[-200px] w-[600px] h-[400px] sm:w-[900px] sm:h-[900px]"
-        style={{
-          background:
-            "radial-gradient(circle, #dee56340 0%, #dee56320 30%, #dee56310 50%, transparent 70%)",
-        }}
-      />
-      <div
-        className="absolute bottom-[-200px] right-[-200px] w-[600px] h-[400px] sm:w-[900px] sm:h-[900px]"
-        style={{
-          background:
-            "radial-gradient(circle, #dee56340 0%, #dee56320 30%, #dee56310 50%, transparent 70%)",
-        }}
-      />
-      <div
-        className="absolute bottom-[50%] right-[-200px] w-[600px] h-[400px] sm:w-[900px] sm:h-[900px]"
-        style={{
-          background:
-            "radial-gradient(circle, #dee56340 0%, #dee56320 30%, #dee56310 50%, transparent 70%)",
-        }}
-      />
-       <div
-        className="absolute bottom-[35%] left-[-400px] w-[600px] h-[400px] sm:w-[900px] sm:h-[900px]"
         style={{
           background:
             "radial-gradient(circle, #dee56340 0%, #dee56320 30%, #dee56310 50%, transparent 70%)",
@@ -789,7 +740,7 @@ const BidoroLayout: React.FC = () => {
 
       {/* Animated "We are launching soon" section */}
       <motion.div 
-        className="max-w-full mx-auto my-8 mt-[8rem] relative overflow-hidden flex flex-col min-h-[500px] max-h-[100vh]"
+        className="max-w-full mx-auto my-8 mt-[8rem] relative overflow-hidden flex flex-col min-h-[500px]"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -840,7 +791,7 @@ const BidoroLayout: React.FC = () => {
             <img
               src="/assets/sandtimer.png"
               alt="Hourglass"
-              className="w-full h-auto object-contain object-bottom z-10"
+              className="w-full h-auto object-contain"
             />
           </motion.div>
         </motion.div>

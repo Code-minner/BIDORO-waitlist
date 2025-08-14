@@ -131,7 +131,7 @@ const ThankYouPage = () => {
             variants={itemVariants}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            You're In! 🎉
+            You&apos;re In! 🎉
           </motion.h1>
           
           {/* Success message */}
@@ -142,7 +142,7 @@ const ThankYouPage = () => {
           >
             Thanks for joining the <span className="text-[#1C341A] font-semibold">Bidoro</span> waitlist. 
             <br className="hidden md:block" />
-            We'll notify you as soon as we launch!
+            We&apos;ll notify you as soon as we launch!
           </motion.p>
           
           {/* What's next section */}
@@ -174,7 +174,7 @@ const ThankYouPage = () => {
                   <span className="text-2xl">🚀</span>
                 </div>
                 <p className="text-sm font-medium text-gray-800">Early access</p>
-                <p className="text-xs text-gray-600">You'll be first to know</p>
+                <p className="text-xs text-gray-600">You&apos;ll be first to know</p>
               </motion.div>
               
               <motion.div 

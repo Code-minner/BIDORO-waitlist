@@ -45,8 +45,9 @@ const WaitlistModal: React.FC<WaitlistModalProps> = ({ isOpen, onClose }) => {
       onClose();
       router.push('/thank-you');
       
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err: unknown) {
+      const error = err as Error;
+      setError(error.message || 'Something went wrong');
     } finally {
       setLoading(false);
     }

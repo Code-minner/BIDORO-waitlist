@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     title: "BIDORO",
     description:
       "Discover budget-friendly deals, unique handmade goods, and second-hand treasures — all verified and trusted with secure escrow payments.",
-    url: "https://your-domain.com",
+    url: "https://bidoro.africa",
     siteName: "BIDORO",
     images: [
       {
-        url: "https://your-domain.com/og-image.jpg", // Replace with actual hosted image
+        url: "https://blogger.googleusercontent.com/img/a/AVvXsEhOPIEDR6l5Z8hd4Mh6nMxGEqkZFAFgQXYRMqd0XJGhvlgr3Q533PzNW7Uc7DVpnfS9BYIyxWheLCWQg7YRkGCIq2C-MyEVFAyDeFQo0NpbcMKym5pkHJ9TLN8RAHczcaxpz82x9WWcakvaJjYitrVjzNohBl7HxK1_tjsMtt3LQ8LPKd7UR2YPYBkFtzk", // Replace with actual hosted image
         width: 1200,
         height: 630,
         alt: "BIDORO Marketplace Preview",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "BIDORO",
     description:
       "Discover budget-friendly deals, unique handmade goods, and second-hand treasures — all verified and trusted with secure escrow payments.",
-    images: ["https://your-domain.com/og-image.jpg"], // Same as OG image
+    images: ["https://blogger.googleusercontent.com/img/a/AVvXsEhOPIEDR6l5Z8hd4Mh6nMxGEqkZFAFgQXYRMqd0XJGhvlgr3Q533PzNW7Uc7DVpnfS9BYIyxWheLCWQg7YRkGCIq2C-MyEVFAyDeFQo0NpbcMKym5pkHJ9TLN8RAHczcaxpz82x9WWcakvaJjYitrVjzNohBl7HxK1_tjsMtt3LQ8LPKd7UR2YPYBkFtzk"], // Same as OG image
   },
 };
 

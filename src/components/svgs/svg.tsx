@@ -92,3 +92,15 @@ export function Handshake(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function WavyLines(props: React.SVGProps<SVGSVGElement>) {
+  return (
+<svg width="2952" height="735" viewBox="0 0 2952 735" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.371 615.332C388.611 648.257 836.582 498.407 1016.04 419.367C1645.13 128.653 2426.81 64.4137 2911.93 92.8816" stroke="#DEE563"/>
+<path d="M42.3133 664.341C398.554 697.266 846.524 547.416 1025.98 468.376C1655.07 177.662 2436.76 113.422 2921.87 141.89" stroke="#DEE563"/>
+<path d="M46.8123 713.844C403.053 746.769 851.023 596.919 1030.48 517.879C1659.57 227.165 2441.26 162.926 2926.37 191.394" stroke="#DEE563"/>
+<path d="M28.0765 568.079C384.317 601.004 832.288 451.154 1011.74 372.114C1640.83 81.4 2422.52 17.1605 2907.64 45.6284" stroke="#DEE563"/>
+</svg>
+
+ );
+}

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Discover budget-friendly deals, unique handmade goods, and second-hand treasures — all verified and trusted with secure escrow payments.",
   icons: {
-    icon: "/assets/BIDORO-icon-img.jpg",
+    icon: "https://blogger.googleusercontent.com/img/a/AVvXsEhOPIEDR6l5Z8hd4Mh6nMxGEqkZFAFgQXYRMqd0XJGhvlgr3Q533PzNW7Uc7DVpnfS9BYIyxWheLCWQg7YRkGCIq2C-MyEVFAyDeFQo0NpbcMKym5pkHJ9TLN8RAHczcaxpz82x9WWcakvaJjYitrVjzNohBl7HxK1_tjsMtt3LQ8LPKd7UR2YPYBkFtzk",
   },
   openGraph: {
     title: "BIDORO",

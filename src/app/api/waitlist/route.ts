@@ -72,20 +72,20 @@ const info = await transporter.sendMail({
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome to Bidoro</title>
       </head>
-      <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 0; background-color: #f8f9fa;">
+      <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; border: 2px solid #1C341A; border-radius: 20px;  line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 0; background-color: #f1f6faff;">
         
         <!-- Header with Logo -->
-        <div style="text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1C341A 0%, #DEE563 100%); margin: 0;">
+        <div style="text-align: center; padding: 40px 20px; border-radius: 16px; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); margin: 0;">
           <!-- Your Logo -->
-          <img src="https://bidoro.africa/images/logo.png" 
+          <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhujOGbWy47k29NCS2fQ5HLpAVigulEi5U_2rdnwVvq0lPEXtcb8L1q__7raTtq-K-RT9XWzaCXpuwV_8ENa-2FXsgPWUUdEE4WHHFCnc86S2cZAvJaAQL3UOUKxDCMc831PtTWtn3tLg2z4pk4PQtiSxAdERuskZvdRpkPgxnylwgJVO8T4t8UXmCUp0o" 
                alt="BIDORO Logo" 
-               style="width: 120px; height: auto; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;"
+               style="width: 200px; height: auto; margin-bottom: 20px; display: block; margin-left: auto; margin-right: auto;"
                onerror="this.style.display='none'">
           
-          <h1 style="color: white; margin: 0; font-size: 36px; font-weight: bold;">
+          <h1 style="color: #1C341A; margin: 0; font-size: 36px; font-weight: bold;">
             Welcome to <span style="color: #FFD700;">BIDORO</span>
           </h1>
-          <p style="color: rgba(255,255,255,0.9); margin: 15px 0 0 0; font-size: 18px;">
+          <p style="color: #1C341A; margin: 15px 0 0 0; font-size: 18px;">
             You're officially on the waitlist! 🎉
           </p>
         </div>
